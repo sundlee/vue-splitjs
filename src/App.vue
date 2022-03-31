@@ -1,26 +1,33 @@
 <template>
-  <div id="app" class="split">
-    <div id="split-0" class="content">
-      A
-    </div>
-    <div id="split-1" class="content">
-      B
-      <ul>
-        <li>sizes: {{ sizes }} </li>
-        <li>gutterSize: {{ gutterSize }} </li>
-        <li>minSize: {{ minSize }} </li>
-        <li>maxSize: {{ maxSize }} </li>
-        <li>cursor: {{ cursor }} </li>
-      </ul>
+  <div id="app">
+    <nav-bar />
+    <div class="split">
+      <div id="split-0" class="content">
+        A
+      </div>
+      <div id="split-1" class="content">
+        B
+        <ul>
+          <li>sizes: {{ sizes }} </li>
+          <li>gutterSize: {{ gutterSize }} </li>
+          <li>minSize: {{ minSize }} </li>
+          <li>maxSize: {{ maxSize }} </li>
+          <li>cursor: {{ cursor }} </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Split from 'split.js';
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
+  components: {
+    NavBar,
+  },
   data() {
     return {
       sizes: [20, 80],

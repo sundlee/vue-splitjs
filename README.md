@@ -1,24 +1,9 @@
-# my-split
+# vue-splitjs
 
-## Project setup
+[split.js](https://www.npmjs.com/package/split.js)를 사용해서 2 columns layout을 구성한 예제입니다.
+
+## How to build
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
